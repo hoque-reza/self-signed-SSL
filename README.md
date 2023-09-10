@@ -9,7 +9,7 @@ Steps followed to Activate https service & deploy Self-Signed SSL certificate
   2.  Checked the SSL port listening by using command **telnet 127.0.0.1 443**. Connection was refused. 
       Applied changes to Webserver by using command **systemctl restart httpd**. Then again checked the if SSL port was listening, this time it was connected.
       
-  ![image](https://github.com/hoque-reza/self-signed-SSL/assets/144583935/22ea886b-bd9f-413b-bbdb-2350ed753ad8)
+      ![image](https://github.com/hoque-reza/self-signed-SSL/assets/144583935/22ea886b-bd9f-413b-bbdb-2350ed753ad8)
 
   4.  Allowed https service at firewall: **firewall-cmd --permanent --zone=public --add-service=https** 
       Then Reloaded the firewall to apply changes: **firewall-cmd --reload**
